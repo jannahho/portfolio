@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@700&family=Kanit:wght@500&display=swap');
+
+.maincontainer{
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  background-color: white;
+  grid-template-columns: minmax(0,12.5vw) repeat(8,12.5vw);
+  grid-template-rows: minmax(0,12.5vh) repeat(8,12.5vh);
+  overflow:hidden;
+  z-index: 0;
+}
+
+
+.dropbtn {
+  grid-column: 1 / 1;
+  background-color: transparent;
+  color:  #24963f;
+  font-size: 80px;
+  border: none;
+  cursor: pointer;
+  line-height: 10px;
+  padding-bottom: 60px;
+  padding-left: 20px;
+  z-index: 100;
+}
+
+.dropbtn:active{
+  color: #27a344;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  z-index: 100;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffff70;
+  min-width: 100px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  z-index: 100;
+}
+
+.dropdown-content a {
+  font-family: 'Kanit', sans-serif;
+  color: #ff821c;
+  padding: 12px 16px;
+  display: block;
+  text-decoration: none;
+}
+
+.dropdown-content a:hover {color: #ff9e03;}
+
+.show {display:block;}
+
+#yellowcircle {
+  grid-row-end: 10;
+  grid-column:4/ 6;
+  width: 45vw;
+  height: 45vw;
+  background: #ffff70;
+  border-radius: 50%;
+  z-index: 1;
+  align-self: end;
+  justify-self: center;
+  display: grid;
+}
+
+#yellowcircle > p{
+  justify-self: center;
+  align-self: center;
+  font-family: 'Kanit', sans-serif;
+  font-size: 4em;
+  line-height: 1em;
+  text-indent: 2em;
+  color: #ff821c;
+}
+
+/* #yellowcircle > p:active{
+  color: white;
+}
+
+#yellowcircle > p:focus{
+  color: white;
+}
+
+#yellowcircle > p:visited{
+  color: white;
+} */
+
+#bluecircle {
+  grid-row: 2/2;
+  grid-column: 3/3;
+  width: 19vw;
+  height: 19vw;
+  background: #226dc9;
+  border-radius: 50%;
+  z-index: 3;
+  justify-self: start;
+  align-self: start;
+
+}
+
+#bluetriangle {
+  /* grid-row-start: 5;
+  width: 0;
+  height: 0;
+  border-top: 9vw solid transparent;
+  border-left: 11vw solid #226dc9;
+  border-bottom: 9vw solid transparent; */
+}
+
+.bluetributton {
+  grid-row-start: 5;
+  width: 0;
+  height: 0;
+  border-top: 9vw solid transparent;
+  border-left: 11vw solid #226dc9;
+  border-bottom: 9vw solid transparent;
+}
+
+.bluetributton:hover {
+  border-top: 9vw solid transparent;
+  border-left: 11vw solid #1b59a6;
+  border-bottom: 9vw solid transparent;
+}
+
+
+#yellowtriangle {
+  /* grid-row: 4/ 6;
+  grid-column-end: 10;
+  width: 0;
+  height: 0;
+  border-top: 0vw solid transparent;
+  border-right: 20vw solid #ffff70;
+  border-bottom: 18vw solid transparent;
+  z-index:3;
+  justify-self: end;
+  align-self: center; */
+}
+
+.yellowtributton {
+  grid-row: 4/ 6;
+  grid-column-end: 10;
+  width: 0;
+  height: 0;
+  border-top: 0vw solid transparent;
+  border-right: 20vw solid #ffff70;
+  border-bottom: 18vw solid transparent;
+  z-index:3;
+  justify-self: end;
+  align-self: center;
+}
+
+.yellowtributton:hover {
+  border-top: 0vw solid transparent;
+  border-right: 20vw solid #f0f051;
+  border-bottom: 18vw solid transparent;
+}
+
+#greenrectangle {
+  grid-row: 7/8;
+  grid-column: 6/10;
+  width: 25vw;
+  height: 12vw;
+  background: #24963f;
+  z-index: 3;
+  justify-self: end;
+  display: grid;
+  grid-template-rows: minmax(0,12vw) 1fr;
+}
+
+#greenrectangle> p{
+  justify-self: start;
+  align-self: center;
+  color: #30c753;
+  font-size: 2.3vw;
+  font-family: 'Kanit', sans-serif;
+  margin-left: 5%;
+}
+
+
+#orangerectangle {
+/* grid-row: 9/9;
+grid-column: 5/7;
+width: 9.5vw;
+height: 6vw;
+background: orange;
+z-index: 2;
+align-self: end;
+justify-self: center; */
+}
+
+.orangerecbutton{
+  grid-row: 9/9;
+  grid-column: 5/7;
+  width: 9.5vw;
+  height: 6vw;
+  background: #ff9e03;
+  z-index: 2;
+  align-self: end;
+  justify-self: center;
+}
+
+.orangerecbutton:hover{
+  background: #f78d02;
+}
+
+
+#redrectangle {
+  width: 65vw;
+  height: 40vw;
+  background: #f03d11;
+  grid-row: 1/ 8;
+  grid-column: 5/10;
+  transform: rotate(-40deg);
+  z-index: 0;
+  align-self: center;
+  justify-self: center;
+  display: grid;
+  grid-template: repeat(4,1fr)/repeat(4,1fr);
+}
+
+#orangeline1 {
+  grid-row: 6/6;
+  grid-column: 1/2;
+  width: 14vw;
+  height: 1vw;
+  background: #ff9e03;
+  transform: rotate(-40deg);
+  align-self: center;
+  justify-content: end;
+}
+#orangeline2 {
+  grid-row: 3/7;
+  grid-column: 6/6;
+  width: 19vw;
+  height: 1vw;
+background: #ff9e03;
+transform: rotate(-40deg);
+}

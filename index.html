@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+
+<div class="maincontainer">
+
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">_<br>_<br>_</button>
+    <div id="myDropdown" class="dropdown-content">
+      <a href="index.html">Home</a>
+      <a href="illustration.html">Graphic</a>
+      <a href="video.html">Video</a>
+      <a href="misc.html">Miscellaneous</a>
+    </div>
+  </div>
+
+<!-- javascript from w3schools -->
+<script type="text/javascript">
+  function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+  <div id="yellowcircle">
+    <p class="maintext">
+      HANNAH JO <br>
+      PORTFOLIO
+    </p>
+  </div>
+
+
+  <a href="video.html" class="bluetributton">
+  <div id="bluetriangle">
+  </div>
+  </a>
+
+  <a href="illustration.html" class="yellowtributton">
+  <div id="yellowtriangle">
+  </div>
+  </a>
+
+    <div id="redrectangle">
+      <div id="bluecircle">
+      </div>
+    </div>
+
+
+  <div id="greenrectangle">
+    <p> design<br>production <br>fun </p>
+  </div>
+
+  <a href="misc.html" class="orangerecbutton">
+  <div id="orangerectangle">
+  </div>
+  </a>
+
+  <div id="orangeline1">
+  </div>
+
+  <div id="orangeline2">
+  </div>
+
+  <div class="menuicon">
+  </div>
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+  </body>
+</html>
